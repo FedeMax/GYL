@@ -35,11 +35,15 @@ public class punto16 {
 
     public static void buscar(int num, int vector[], int tama) {
 
+        int contador = 0;
         for (int i = 0; i < tama; i++) {
             if (vector[i] == num) {
                 System.out.println("El numero " + num + " se encuentra en la posicion " + i);
+                contador++;
             }
-
+            if (contador == 0 && i == tama - 1) {
+                System.out.println("No se encuentra el numero en el vector");
+            }
         }
     }
 }
