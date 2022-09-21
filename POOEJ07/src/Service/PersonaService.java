@@ -31,6 +31,7 @@ public class PersonaService {
         System.out.print("Edad : ");
         edad = leer.nextInt();
         System.out.println("H : Hombre , M : Mujer , O : Otro");
+        do{
         System.out.print("Sexo : ");
         sexo = leer.next();
         if (sexo.equals("h")) {
@@ -42,6 +43,7 @@ public class PersonaService {
         } else {
             System.out.println("Error");
         }
+        }while(!sexo.equals("h") && !sexo.equals("m") && !sexo.equals("o"));
         System.out.print("Peso :");
         peso = leer.nextInt();
         System.out.print("Altura : ");
