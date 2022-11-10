@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package colecciones02;
+package Interfaces;
 
 /**
  *
  * @author Mega
  */
-public class Colecciones02 {
+public interface CalculosFormas {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+    public final double PI = 3.1415;
+
+    public void calcularArea();
+
+    public void calcularPerimetro();
 }
